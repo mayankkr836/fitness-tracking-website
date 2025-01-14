@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Healthy Recipe</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+            color: #333;
+            background-image: url('https://images.unsplash.com/photo-1534438327276-14e5300c3a48?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; 
+        }
+
+        .recipe-container {
+            max-width: 800px;
+            margin: 20px auto;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+
+        .recipe-header {
+            position: relative;
+            background: url('healthy-dish.jpg') no-repeat center center/cover;
+            height: 300px;
+            color: white;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .recipe-header h1 {
+            font-size: 2.5rem;
+            background: rgba(0, 0, 0, 0.6);
+            padding: 10px 20px;
+            border-radius: 5px;
+        }
+
+        .recipe-content {
+            padding: 20px;
+        }
+
+        .recipe-section {
+            margin-bottom: 20px;
+        }
+
+        .recipe-section h2 {
+            font-size: 1.8rem;
+            margin-bottom: 10px;
+            color: #27ae60;
+            border-bottom: 2px solid #27ae60;
+            padding-bottom: 5px;
+        }
+
+        .ingredients-list, .instructions-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .ingredients-list li, .instructions-list li {
+            margin: 10px 0;
+            padding: 10px;
+            background: #f1f1f1;
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+        }
+
+        .ingredients-list li::before {
+            content: '\2022';
+            color: #27ae60;
+            font-weight: bold;
+            margin-right: 10px;
+        }
+
+        .instructions-list li {
+            counter-increment: step-counter;
+        }
+
+        .instructions-list li::before {
+            content: counter(step-counter) '. ';
+            font-weight: bold;
+            margin-right: 10px;
+            color: #27ae60;
+        }
+
+        .recipe-footer {
+            text-align: center;
+            padding: 10px;
+            background: #27ae60;
+            color: white;
+            border-top: 3px solid #1e8449;
+        }
+
+        .recipe-footer a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .recipe-footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="recipe-container">
+        <div class="recipe-header">
+            <h1>Avocado Toast Delight</h1>
+        </div>
+        <div class="recipe-content">
+            <div class="recipe-section">
+                <h2>Ingredients</h2>
+                <ul class="ingredients-list">
+                    <li>2 slices of whole grain bread</li>
+                    <li>1 ripe avocado</li>
+                    <li>1 tsp lemon juice</li>
+                    <li>Salt and pepper to taste</li>
+                    <li>Optional: Chili flakes, cherry tomatoes, or microgreens</li>
+                </ul>
+            </div>
+            <div class="recipe-section">
+                <h2>Instructions</h2>
+                <ul class="instructions-list">
+                    <li>Toast the bread slices until golden brown.</li>
+                    <li>Slice the avocado in half, remove the pit, and scoop the flesh into a bowl.</li>
+                    <li>Mash the avocado with a fork and mix in the lemon juice, salt, and pepper.</li>
+                    <li>Spread the avocado mixture evenly on the toasted bread slices.</li>
+                    <li>Top with your choice of chili flakes, cherry tomatoes, or microgreens for extra flavor.</li>
+                    <li>Serve immediately and enjoy!</li>
+                </ul>
+            </div>
+        </div>
+        <div class="recipe-footer">
+            <p>Discover more healthy recipes at <a href="#">HealthyBites.com</a></p>
+        </div>
+    </div>
+
+</body>
+</html>

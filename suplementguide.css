@@ -1,0 +1,96 @@
+/* General Reset */
+/* body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    background-color: #f9f9f9;
+} */
+body {
+    background-image: url('https://images.unsplash.com/photo-1534438327276-14e5300c3a48?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+/* Header */
+.header {
+    text-align: center;
+    padding: 20px;
+    margin-top: -10px;
+    margin-left: -10px;
+    margin-right: -10px;
+    background-color: #14b805;
+    color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+.header p {
+    margin: 5px 0 0;
+    font-size: 1rem;
+    opacity: 0.9;
+}
+
+/* Main Content */
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+}
+
+/* Supplement Card */
+.supplement-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.supplement-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.supplement-card img {
+    width: 100%;
+    height: auto;
+}
+
+.supplement-card .info {
+    padding: 15px;
+}
+
+.supplement-card h2 {
+    margin: 0 0 10px;
+    font-size: 1.5rem;
+    color: #14b805;
+}
+
+.supplement-card p {
+    margin: 0 0 10px;
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+.supplement-card ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.supplement-card li {
+    margin: 5px 0;
+    font-size: 0.9rem;
+}
+
+.supplement-card li strong {
+    color: #14b805;
+}

@@ -1,0 +1,96 @@
+/* styles.css */
+
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #eef7ec;
+    color: #2e573b;
+}
+
+.meal-planner-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.header {
+    text-align: center;
+    padding: 20px;
+    background-color: #3a9d5e;
+    color: white;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 1.8rem;
+}
+
+.save-btn {
+    background-color: white;
+    color: #3a9d5e;
+    border: 2px solid #3a9d5e;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.save-btn:hover {
+    background-color: #3a9d5e;
+    color: white;
+}
+
+.meal-planner {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.day-block {
+    background: white;
+    border: 2px solid #c7e6d3;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.day-name {
+    font-size: 1.5rem;
+    color: #3a9d5e;
+    margin-bottom: 15px;
+}
+
+.meal {
+    margin-bottom: 15px;
+}
+
+.meal label {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #2e573b;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.meal input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #c7e6d3;
+    border-radius: 8px;
+    background-color: #f9fff9;
+    font-size: 1rem;
+}
+
+.meal input:focus {
+    border-color: #3a9d5e;
+    outline: none;
+    box-shadow: 0 0 5px rgba(58, 157, 94, 0.5);
+}
+
+

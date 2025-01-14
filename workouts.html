@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Workouts - FitTrack</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">P<span class="highlight">A</span>LESTR<span class="highlight">A</span></div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="fitness.html">Fitness</a></li>
+            <li><a href="workouts.html" class="active">Workouts</a></li>
+            <li><a href="nutrition.html">Nutrition</a></li>
+            <li><a href="progress.html">Progress</a></li>
+            <li><a href="#" id="downloadBtn">Download</a></li>
+            <li class="user-menu">
+                <a href="#" id="userBtn">
+                    <i class="fas fa-user-circle"></i>
+                    <span>Account</span>
+                </a>
+                <div class="user-dropdown">
+                    <a href="#" id="loginBtn"><i class="fas fa-sign-in-alt"></i> Login</a>
+                    <a href="#" id="signupBtn"><i class="fas fa-user-plus"></i> Sign Up</a>
+                    <a href="#" id="logoutBtn" style="display: none;"><i class="fas fa-sign-out-alt"></i> Logout</a>
+                </div>
+            </li>
+        </ul>
+    </nav>
+
+    <main class="workout-page">
+        <h1>Start Your Workout</h1>
+        
+        <div class="workout-container">
+            <div class="workout-type">
+                <h2>Select Workout Type</h2>
+                <select id="workoutType">
+                    <option value="Select">Select</option>
+                    <option value="strength">Strength Training</option>
+                    <option value="cardio">Cardio</option>
+                    <option value="flexibility">Flexibility</option>
+                    <option value="Full-Body Warm-Up">Full-Body Warm-Up</option>
+                    <option value="Upper Body Strength">Upper Body Strength</option>
+                    <option value="Lower Body Burn">Lower Body Burn</option>
+                    <option value="Bodyweight Squats">Bodyweight Squats</option>
+                </select>
+            </div>
+
+            <div class="exercise-list">
+                <h2>Exercises</h2>
+                <div id="exerciseContainer">
+                    <div class="Exercise-Name"></div>
+                </div>
+                <button class="btn primary" id="addExercise">Add Exercise</button>
+                
+            </div>
+
+            <div class="workout-summary">
+                <h2>Workout Summary</h2>
+                <div id="summary">
+                    <p>Duration: <span id="duration">0:00</span></p>
+                    <p>Exercises: <span id="exerciseCount">0</span></p>
+                </div>
+                <button class="btn primary" id="finishWorkout">Finish Workout</button>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

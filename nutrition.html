@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nutrition - FitTrack</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">P<span class="highlight">A</span>LESTR<span class="highlight">A</span></div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="fitness.html">Fitness</a></li>
+            <li><a href="sports.html">Sports</a></li>
+            <li><a href="yoga.html">Yoga</a></li>
+            <li><a href="nutrition.html" class="active">Nutrition</a></li>
+            <li><a href="workouts.html">Workouts</a></li>
+            <li><a href="progress.html">Progress</a></li>
+            <li><a href="#" id="downloadBtn">Download</a></li>
+            <li class="user-menu">
+                <a href="#" id="userBtn">
+                    <i class="fas fa-user-circle"></i>
+                    <span>Account</span>
+                </a>
+                <div class="user-dropdown">
+                    <a href="#" id="loginBtn"><i class="fas fa-sign-in-alt"></i> Login</a>
+                    <a href="#" id="signupBtn"><i class="fas fa-user-plus"></i> Sign Up</a>
+                    <a href="#" id="profileBtn" style="display: none;"><i class="fas fa-user"></i> Profile</a>
+                    <a href="#" id="logoutBtn" style="display: none;"><i class="fas fa-sign-out-alt"></i> Logout</a>
+                </div>
+            </li>
+        </ul>
+    </nav>
+
+    <main class="nutrition-page">
+        <h1>Nutrition Guide</h1>
+        
+        <div class="nutrition-container">
+            <div class="nutrition-card">
+                <img src="https://images.unsplash.com/photo-1490645935967-10de6ba17061?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80" alt="Meal Planning">
+                <h3>Meal Planning</h3>
+                <p>Create personalized meal plans based on your fitness goals.</p>
+                <a href="mealplanning.html" class="btn primary">Plan Meals</a>
+            </div>
+
+            <div class="nutrition-card">
+                <img src="https://images.unsplash.com/photo-1494390248081-4e521a5940db?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80" alt="Healthy Recipes">
+                <h3>Healthy Recipes</h3>
+                <p>Discover delicious and nutritious recipes for your fitness journey.</p>
+                <a href="healthyrecipe.html" class="btn primary">View Recipes</a>
+            </div>
+
+            <div class="nutrition-card">
+                <img src="https://images.unsplash.com/photo-1505253716362-afaea1d3d1af?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80" alt="Supplements">
+                <h3>Supplements Guide</h3>
+                <p>Learn about essential supplements for your fitness goals.</p>
+                <a href="suplementguide.html" class="btn primary">Learn More</a>
+            </div>
+
+            <div class="nutrition-card">
+                <img src="https://images.unsplash.com/photo-1498837167922-ddd27525d352?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80" alt="Nutrition Tracking">
+                <h3>Nutrition Tracking</h3>
+                <p>Track your daily nutrition intake and maintain a balanced diet.</p>
+                <a href="progress.html" class="btn primary">Start Tracking</a>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

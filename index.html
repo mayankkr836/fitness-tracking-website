@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PALESTRA - Elevate Your Potential</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">P<span class="highlight">A</span>LESTR<span class="highlight">A</span></div>
+        <ul class="nav-links">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="fitness.html">Fitness</a></li>
+            <li><a href="sports.html">Sports</a></li>
+            <li><a href="yoga.html">Yoga</a></li>
+            <li><a href="nutrition.html">Nutrition</a></li>
+            <li><a href="workouts.html">Workouts</a></li>
+            <li><a href="BMI.html">BMI</a></li>
+            <li><a href="progress.html">Progress</a></li>
+            <li><a href="#" id="downloadBtn">Download</a></li>
+            <li class="user-menu">
+                <a href="#" id="userBtn">
+                    <i class="fas fa-user-circle"></i>
+                    <span>Account</span>
+                </a>
+                <div class="user-dropdown">
+                    <div class="social-login-options">
+                        <a href="#" id="googleLoginBtn" class="social-btn google-btn">
+                            <i class="fab fa-google"></i> Continue with Google
+                        </a>
+                        <a href="#" id="appleLoginBtn" class="social-btn apple-btn">
+                            <i class="fab fa-apple"></i> Continue with Apple
+                        </a>
+                        <a href="#" id="phoneLoginBtn" class="social-btn phone-btn">
+                            <i class="fas fa-mobile-alt"></i> Use Phone Number
+                        </a>
+                    </div>
+                    <div class="divider"><span>or</span></div>
+                    <a href="#" id="loginBtn"><i class="fas fa-sign-in-alt"></i> Email Login</a>
+                    <a href="#" id="signupBtn"><i class="fas fa-user-plus"></i> Email Sign Up</a>
+                    <a href="#" id="profileBtn" style="display: none;"><i class="fas fa-user"></i> Profile</a>
+                    <a href="#" id="logoutBtn" style="display: none;"><i class="fas fa-sign-out-alt"></i> Logout</a>
+                </div>
+            </li>
+        </ul>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-content">
+            <h1>Transform Your Life</h1>
+            <p>Your journey to a healthier lifestyle starts here</p>
+            <div class="cta-buttons">
+                <a href="workouts.html" class="btn primary">Start Your Journey</a>
+            </div>
+        </div>
+    </header>
+
+    <section class="quick-stats">
+        <div class="stat-item">
+            <i class="fas fa-users"></i>
+            <h3>10K+</h3>
+            <p>Active Users</p>
+        </div>
+        <div class="stat-item">
+            <i class="fas fa-dumbbell"></i>
+            <h3>500+</h3>
+            <p>Workout Plans</p>
+        </div>
+        <div class="stat-item">
+            <i class="fas fa-heart"></i>
+            <h3>98%</h3>
+            <p>Success Rate</p>
+        </div>
+        <div class="stat-item">
+            <i class="fas fa-award"></i>
+            <h3>50+</h3>
+            <p>Expert Trainers</p>
+        </div>
+    </section>
+
+    <section id="features" class="features-section">
+        <h2>Why Choose Palestra?</h2>
+        <div class="features">
+            <div class="feature-card">
+                <i class="fas fa-mobile-alt"></i>
+                <h3>Track Anywhere</h3>
+                <p>Access your workouts and track progress from any device, anytime.</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-chart-line"></i>
+                <h3>Monitor Progress</h3>
+                <p>Visualize your fitness journey with detailed analytics and insights.</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-users"></i>
+                <h3>Community Support</h3>
+                <p>Join a community of fitness enthusiasts and share your success.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="programs-preview">
+        <h2>Featured Programs</h2>
+        <div class="program-cards">
+            <div class="program-preview-card">
+                <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80" alt="Fitness Program">
+                <div class="card-content">
+                    <h3>Fitness Training</h3>
+                    <p>Comprehensive fitness programs for all levels</p>
+                    <a href="fitness.html" class="btn primary">Explore</a>
+                </div>
+            </div>
+            <div class="program-preview-card">
+                <img src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80" alt="Yoga Program">
+                <div class="card-content">
+                    <h3>Yoga Classes</h3>
+                    <p>Find peace and strength through yoga</p>
+                    <a href="yoga.html" class="btn primary">Explore</a>
+                </div>
+            </div>
+            <div class="program-preview-card">
+                <img src="https://images.unsplash.com/photo-1490645935967-10de6ba17061?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80" alt="Nutrition Program">
+                <div class="card-content">
+                    <h3>Nutrition Plans</h3>
+                    <p>Personalized nutrition guidance for your goals</p>
+                    <a href="nutrition.html" class="btn primary">Explore</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section">
+        <div class="cta-content">
+            <h2>Ready to Transform Your Life?</h2>
+            <p>Join thousands of others who have already started their fitness journey with us.</p>
+            <a href="workouts.html" class="cta-button">Get Started Now</a>
+        </div>
+    </section>
+
+    <div id="downloadModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Download Palestra App</h2>
+            <div class="download-options">
+                <a href="#" class="download-option android">
+                    <i class="fab fa-android"></i>
+                    <div class="option-text">
+                        <h3>Android App</h3>
+                        <p>Download for Android devices</p>
+                    </div>
+                </a>
+                <a href="#" class="download-option ios">
+                    <i class="fab fa-apple"></i>
+                    <div class="option-text">
+                        <h3>iOS App</h3>
+                        <p>Download for iPhone/iPad</p>
+                    </div>
+                </a>
+                <div class="qr-section">
+                    <div class="qr-code">
+                        <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://palestra-app.com/download" alt="QR Code">
+                    </div>
+                    <p>Scan to download</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>PALESTRA</h3>
+                <p>Where ancient wisdom meets modern fitness. Transform your body, elevate your mind.</p>
+                <br>
+                <p>Our Team Member</p>
+                <p>1.Dhiraj Kumar</p>
+                <p>2.kushal katiyar</p>
+                <p>3.Mayank Kumar</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="fitness.html">Fitness</a></li>
+                    <li><a href="sports.html">Sports</a></li>
+                    <li><a href="yoga.html">Yoga</a></li>
+                    <li><a href="nutrition.html">Nutrition</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Connect With Us</h3>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 PALESTRA. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
